@@ -1,0 +1,29 @@
+﻿<Window x:Class="guessing_game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guessing_game"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" />
+        <TextBlock  HorizontalAlignment="Left" Margin="259,12,0,0" VerticalAlignment="Top" Width="131" Text="Enter Name" />
+        <TextBox Name="firstName" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox Name="IPAddress" HorizontalAlignment="Left" Height="23" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBox Name="Port" HorizontalAlignment="Left" Height="23" Margin="10,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" />
+        <Button Content="Submit Information To the Server" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" Width="235" Click="Button_Click_2"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="259,60,0,0" TextWrapping="Wrap" Text="Enter Your IP Address" VerticalAlignment="Top"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="259,102,0,0" TextWrapping="Wrap" Text="Enter Your Port" VerticalAlignment="Top"/>
+        <TextBox Name="Guess" HorizontalAlignment="Left" Height="23" Margin="10,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <TextBlock Name="Range" HorizontalAlignment="Left" Margin="259,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" />
+        <Button Content="Make This Guess!" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="235" Click="Guess_Click"/>
+        <TextBlock Name="OutOfRange" HorizontalAlignment="Left" Margin="259,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBlock Name="Won" HorizontalAlignment="Left" Margin="10,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button Name="yes" Visibility="Hidden" Content="Yes" HorizontalAlignment="Left" Margin="18,310,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Name="no" Visibility="Hidden" Content="No" HorizontalAlignment="Left" Margin="131,310,0,0" VerticalAlignment="Top" Width="75" Click="No_click"/>
+        <Button Background="Red" Content="Exit Application, and disconnect from server" HorizontalAlignment="Left" Margin="10,336,0,0" VerticalAlignment="Top" Width="235" Click="No_click"/>
+        <TextBlock Name="sure" HorizontalAlignment="Left" Margin="10,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235"/>
+        <Button Visibility="Hidden" Name="yes2" Click="ExitApp"  Content="Yes" HorizontalAlignment="Left" Margin="63,390,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
